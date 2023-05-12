@@ -143,7 +143,7 @@
                 
 <div class="tweetin">
     <form action="/tweet" method="post" style="width:99%;padding-left: 10px;">
-    <textarea class="form-control" aria-label="With textarea" name="tweet"></textarea>
+    <textarea class="form-control" aria-label="With textarea" name="tweet" placeholder="What's Happening..."></textarea>
 
     <input type="submit" value="Tweet" id="tweetbtn">
 </form>
@@ -164,7 +164,22 @@
                 </div>
 
 
-
+                <div class="tweets">
+                    <% if(mytweet) {%>
+                        <ul class="list-group">
+                        <% mytweet.map(t=>{  console.log(t)%>
+                            
+                                <li class="list-group-item tweet"><img src="<%=t.url%>" alt="" class="profile"> <%=t.name %>  <span class="blockquote-footer"><%=t.date.split(',')  %></span></li>
+                                <li class="list-group-item">  <p><%= t.tweet %></p>
+                                  <p> <i class="fa-solid fa-heart like" id="like"
+                                    style="color: #eeb9d4;"></i>  02</p> 
+                                </li>
+    
+                                
+                         
+                    <% })} %>
+                    </ul>
+                </div>
                 <div>
                     <hr>
                     <div class="usertweet">
