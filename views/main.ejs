@@ -10,7 +10,100 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <title>Twitter Home Page</title>
+    <style>
+         <style>
+        .routes {
+            display: flex;
+            padding: 12px 12px 12px 12px;
+        }
+
+        .routes i {
+            margin-right: 10px;
+        }
+
+        .log {
+            color: red;
+        }
+
+        .routes-div {
+            /* width: 20%; */
+            display: flex;
+        }
+
+        .options {
+            text-align: center;
+            /* margin-right: 50px; */
+
+        }
+
+        .options span {
+            padding: 52px 52px;
+        }
+
+        .tweetdiv {
+            border: 1px solid gray;
+            background-color: rgba(245, 245, 245, 0.565);
+            width: 90%;
+            height: 100vh;
+        }
+
+        .optionsdiv {
+            /* justify-content: center; */
+            width: 20%;
+        }
+
+        .sendtweet {
+            display: flex;
+            background-color: white;
+            height: 210px;
+            width: 100%;
+        }
+
+        .sendtweet input {
+            border: none;
+            height: 130px;
+            width: 1200px;
+        }
+
+        .sendtweet img {
+            height: 40px;
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        .sendtweet button {
+            color: white;
+            background: rgb(22, 154, 255);
+            border-radius: 40%;
+            float: right;
+            height: 30px;
+            width: 70px;
+            border: none;
+        }
+        .usertweet .imgname{
+            display: flex;
+            height: fit-content;
+        }
+        .usertweet .imgname img{
+            height: 20px;
+            width: 30px;
+            border-radius: 50%;
+        }
+        .imgname span{
+            /* padding-left: 20px; */
+            /* height: fit-content; */
+        }
+        .usertweet{
+            background-color: white;
+        }
+        .content {
+            /* display: flex; */
+            margin-left: 20px;
+        }
+    </style>
+    </style>
 </head>
+
 <body>
     <div class="app">
         <div class="side">
@@ -69,6 +162,38 @@
                     <% })} %>
                     </ul>
                 </div>
+
+
+
+                <div>
+                    <hr>
+                    <div class="usertweet">
+                        <div class="imgname">
+                            <img
+                                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2960&q=80">
+                            <span>Name</span>
+                        </div>
+                        <!-- <br> -->
+                        <div class="content">
+                            <p>sd</p>
+                            <i class="fa-regular fa-heart"></i> 1
+                        </div>
+                    </div>
+                    <br>
+                    <div class="usertweet">
+                        <div class="imgname">
+                            <img
+                                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2960&q=80">
+                            <span>Name</span>
+                        </div>
+                        <!-- <br> -->
+                        <div class="content">
+                            <p>sd</p>
+                            <i class="fa-regular fa-heart"></i> 1
+                        </div>
+                    </div>
+                </div>
+
             </div>
            
               
